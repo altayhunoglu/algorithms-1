@@ -3,7 +3,7 @@ package algorithms.curated170.easy.countingelements;
 import java.util.Arrays;
 
  
-public class CountingElements {
+public class Test {
     public int countElements(int[] arr) {
     Arrays.sort(arr);
     int count = 0;
