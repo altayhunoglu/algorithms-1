@@ -28,7 +28,7 @@ jobs:
       actions: read
       contents: read
       security-events: write
-
+         
     strategy:
       fail-fast: false
       matrix:
@@ -58,8 +58,8 @@ jobs:
       with:
           java-version: '11'
           distribution: 'adopt'
-    - name: Build with Maven
-      run: mvn --batch-mode --update-snapshots verify
+    - name: Build with Gradle
+      run: ./gradlew build
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 https://git.io/JvXDl
